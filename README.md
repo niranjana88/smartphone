@@ -16,5 +16,4 @@ This is the data that the `run_analysis.R` script modifies:
 
 1. https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-**Note:_** *You do not have to download for the script to work. The script will download
-if the `UCI HAR Dataset` directory does not exsist during execution.*
+**Note:** *You do not have to download for the script to work. The above link is provided for reference. The script will download if the `UCI HAR Dataset` directory does not exist during execution.*

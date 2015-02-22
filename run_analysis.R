@@ -20,7 +20,21 @@ if (!file.exists('UCI HAR Dataset')) {
         unlink('phonedata.zip') 
 }
 
+# Read and store the data files
+x_test <- read.table('UCI HAR Dataset//test//X_test.txt')
+y_test <- read.table('UCI HAR Dataset//test//y_test.txt')
+subject_test <- read.table('UCI HAR Dataset//test//subject_test.txt')
+
+x_train <- read.table('UCI HAR Dataset//train//X_train.txt')
+y_train <- read.table('UCI HAR Dataset//train//y_train.txt')
+subject_train <- read.table('UCI HAR Dataset//train//subject_train.txt')
+
+features <- read.table('UCI HAR Dataset//features.txt', stringsAsFactors = FALSE)
+
 #  Merge the training and the test sets to create one data set.
+x <- rbind(x_test, x_train)
+y <- rbind(y_test, y_train)
+subject <- rbind(subject_test, subject_train)
 
 #  Extract only the measurements on the mean and standard deviation 
 #     for each measurement.
