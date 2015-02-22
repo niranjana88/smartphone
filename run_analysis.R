@@ -61,6 +61,8 @@ subject <- rename(subject, subject = V1)
 activities$V2 = gsub("_", "", tolower(as.character(activities$V2)))
 y <- merge(y, activities, by.x = "V1", by.y = "V1")
 y <- rename(y, activity = V2)
+
+# Get rid of the numeric column now that we have the activity column
 y$V1 <- NULL
 
 #  Extract only the measurements on the mean and standard deviation    
@@ -69,7 +71,14 @@ x <- x[, pick_columns]
 
 # Merge into one tidy dataset
 tidy_data <- cbind(subject, y, x)
-print("tidy_data.txt created.")
 
 #  Create a second, independent tidy data set with the average of each variable
 #  for each activity and each subject.
+print("Calculate averages.")
+
+final_data <- tidy_data %>% 
+        group_by(subject, activity) %>% 
+        summarise_each(funs(mean))
+
+write.table(final_data, "tidy_data.txt", row.names = FALSE)
+print("tidy_data.txt created.")

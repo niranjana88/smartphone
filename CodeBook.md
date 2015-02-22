@@ -28,6 +28,3 @@ The naming convention for the remaining variables is as listed:
 - `mean` = mean value
 - `std` = standard deviation
 - `X`, `Y` or `Z` = used to denote 3-axial signals in the X, Y and Z directions
-
-## Transformations
-
