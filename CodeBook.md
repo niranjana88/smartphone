@@ -22,8 +22,11 @@ Files from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20
 The naming convention for the remaining variables is as listed:
 - `t` or `f` = time or frequency
 - `Body` or `Gravity` = body or gravity acceleration
-- `mean` = Mean value
-- `std` = Standard deviation
+- `Acc` or `Gyro` = accelleration or gyroscope
+- `Mag` = magnitude
+- `Jerk` = jerk
+- `mean` = mean value
+- `std` = standard deviation
 - `X`, `Y` or `Z` = used to denote 3-axial signals in the X, Y and Z directions
 
 ## Transformations

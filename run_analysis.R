@@ -63,14 +63,12 @@ y <- merge(y, activities, by.x = "V1", by.y = "V1")
 y <- rename(y, activity = V2)
 y$V1 <- NULL
 
-#  Extract only the measurements on the mean and standard deviation 
-#     
+#  Extract only the measurements on the mean and standard deviation    
 pick_columns <- grep("(std|mean[^F])", features)
 x <- x[, pick_columns]
 
 # Merge into one tidy dataset
 tidy_data <- cbind(subject, y, x)
-
 print("tidy_data.txt created.")
 
 #  Create a second, independent tidy data set with the average of each variable

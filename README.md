@@ -7,9 +7,8 @@ The purpose of this project is to demonstrate your ability to collect, work with
   1. Describes the variables
   2. Describes the data
   3. Describes the transformations performed to clean up the data
-3. `run_analysis.R` Performs the transformation of the data and outputs into two data files
-  1. `tidy.txt` Merged data from training and test data files
-  2. `tidy_average.txt` Averages from `tidy.txt`
+3. `run_analysis.R` Performs the transformation of the data and outputs into a 
+data file named `tidy.txt` 
 
 ### Additional files not included in this repo:
 This is the data that the `run_analysis.R` script modifies:
