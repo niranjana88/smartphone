@@ -16,8 +16,15 @@ Files from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20
 - `/UCI HAR Dataset/test/y_test.txt`
 
 ## Variables
+- `subject` = numeric designation for subject carrying the phone
+- `activity` = walking, walkingupstairs, walkingdownstairs, sitting, standing, laying
 
-
+The naming convention for the remaining variables is as listed:
+- `t` or `f` = time or frequency
+- `Body` or `Gravity` = body or gravity acceleration
+- `mean` = Mean value
+- `std` = Standard deviation
+- `X`, `Y` or `Z` = used to denote 3-axial signals in the X, Y and Z directions
 
 ## Transformations
 
