@@ -1,3 +1,6 @@
-CodeBook.md
-David Lyons
+## Variables
+
+## Data
+
+## Transformations
 
