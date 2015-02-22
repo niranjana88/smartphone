@@ -15,7 +15,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 This is the data that the `run_analysis.R` script modifies:
 
 1. https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-<cite> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.</cite>
+<cite> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. "A Public Domain Dataset for Human Activity Recognition Using Smartphones." *21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning*, ESANN 2013. Bruges, Belgium 24-26 April 2013.</cite>
 
 **Note:** *You do not have to download for the script to work. The above link is provided for reference. The script will download if the `UCI HAR Dataset` directory does not exist during execution.*
 
